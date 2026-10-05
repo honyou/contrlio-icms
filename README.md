@@ -11,6 +11,7 @@
 - **网页地址**：[https://contrlio.com](https://contrlio.com)
 - **演示账号**：`demo@contrlio.com`
 - **演示密码**：`txwK7hFOQvTAhOtyo3bqeaTU`
+- **其他子账号密码**：`contrl202610`
 - **建议浏览顺序**：工作台 → 业务流程 → 风险控制矩阵 → 内控检查 → 证据库 → 整改闭环 → 内控报告。
 - **作品说明**：[系统架构、菜单职责、企业案例与 13 张网页截图](icms/docs/GITHUB_SHOWCASE.md)。
 
