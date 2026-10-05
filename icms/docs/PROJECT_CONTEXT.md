@@ -1,6 +1,6 @@
 # 项目上下文
 
-更新日期：2026-10-04。本文依据本地 README、现有文档、前后端源码、数据库模型/迁移、部署配置及本日生产发布检查整理。
+更新日期：2026-10-05。本文依据本地 README、现有文档、前后端源码、数据库模型/迁移、生产发布记录及本日 GitHub 首发核验整理。
 
 ## 项目识别与目标
 
@@ -56,9 +56,13 @@
 
 已核对应用中的本地项目“contrlio企业内控管理系统”指向 Git 根，ChatGPT 项目“企业内控管理系统”也已存在。父级指引转入工程文档，避免从现有项目启动任务时漏读规则；用法见 [项目交接](PROJECT_HANDOFF.md)。
 
-截至 2026-10-05，Git 根仍为本目录，分支 `main`，首发提交为 `af97ee2`，远端 `origin` 指向 `https://github.com/honyou/contrlio-icms.git`。首发提交包括 153 个跟踪文件，约 3.3 MiB；收款二维码未纳入版本。根目录 `docs` 是指向 `icms/docs` 的符号链接，须在远端保留。
+截至 2026-10-05，Git 根仍为本目录，远端 `origin` 指向私有仓库 [honyou/contrlio-icms](https://github.com/honyou/contrlio-icms)。本地首发准备提交为 `af97ee2`，随后文档记录提交为 `2348bac`。根目录 `docs` 是指向 `icms/docs` 的符号链接；业务工程和文档仍保持原目录结构，收款二维码未纳入版本。
 
-用户已明确授权将完整项目上传到私有仓库 `honyou/contrlio-icms`。Chrome 登录会话可以打开该仓库的上传页面；Codex GitHub 插件虽已启用，但本次 `owner=honyou` 的仓库列表为空，读取目标仓库返回 404，Git HTTPS 也没有可用凭据，`gh` CLI 不可用。因此尚无成功推送或远端文件核验。上传仍待配置仅覆盖该私有仓库的可写连接；不能把 Chrome 登录态当作 Connector 授权，也不扩大到未获授权的 CLI 凭据。
+用户已明确授权上传完整项目，并授权 ChatGPT Codex Connector 仅访问该仓库。2026-10-05 完成 GitHub App 安装 `168080528`，仓库选择为仅 `honyou/contrlio-icms`；此前 Connector 仓库列表为空、目标读取 404 的连接阻塞已解决。通过 Connector 的 Git 数据 API 完成首发，远端提交为 `1a17ca1e6664d09d937a92ef48bfab066d698d87`，树 SHA 为 `8dc0119f1f2154b9be681ef22102fca97a81d7ee`，与上传前本地源树完全一致。远端完整树已核对 153 个 blob、13 张展示截图、根 `docs` 符号链接（模式 `120000`）及两份可执行脚本（模式 `100755`）；仓库保持私有。
+
+Git 数据 API 生成了新的远端提交，提交 SHA 不同于本地准备提交；验证依据是完整树 SHA 及逐项路径、模式和 blob SHA 一致。GitHub 首发只同步经筛选的代码、配置示例、文档与截图，不同步 PostgreSQL、MinIO 业务数据或环境密钥。本任务没有部署生产，也没有运行项目业务测试。
+
+本地已导入并校验远端提交对象，`main` 跟踪 `origin/main`；原本地准备历史保存在 `codex/local-before-github-publish` 分支。GitHub 首页已显示 Private、README、管理链 Mermaid 和 `docs` 的目录符号链接。用户追加要求在展示说明加入线上地址及专用演示账号，便于 HR 查看；线上入口为 [https://contrlio.com](https://contrlio.com)。用户最终指定 `demo@contrlio.com` 并授权刊登其提供的密码；2026-10-05 线上登录 API 返回 200，认证成功且用户邮箱匹配。README 和作品说明刊登最终凭据，本次未改动账号或密码，未写入业务数据。
 
 ## 日常协作
 
