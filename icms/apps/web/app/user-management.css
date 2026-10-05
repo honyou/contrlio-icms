@@ -1,0 +1,57 @@
+.user-admin-page{max-width:1280px}
+.registration-invitations-card{margin:0 0 16px;padding:16px}
+.registration-invitations-heading{display:flex;align-items:center;gap:11px}
+.registration-invitations-heading>div:nth-child(2){min-width:0}
+.registration-invitations-heading h3{margin:0;color:#42594f;font-size:13px}
+.registration-invitations-heading p{margin:5px 0 0;color:#87948e;font-size:10px}
+.registration-invite-create{margin-left:auto;min-height:34px;padding:0 12px;gap:6px;font-size:10px;white-space:nowrap}
+.registration-invitations-note{margin:12px 0 0 45px;color:#89958f;font-size:9px;line-height:1.7}
+.registration-invite-error{margin:10px 0 0 45px}
+.registration-invite-secret{display:flex;align-items:center;gap:12px;margin:12px 0 0 45px;padding:11px 12px;border:1px solid #d8eadf;border-radius:9px;background:#f4faf6}
+.registration-invite-secret>div{display:flex;flex-direction:column;gap:4px;min-width:150px}
+.registration-invite-secret b{font-size:10px;color:#477763}
+.registration-invite-secret span{font-size:9px;color:#87958c}
+.registration-invite-secret code{flex:1;overflow-wrap:anywhere;color:#305b49;font-size:12px;font-weight:700;letter-spacing:.05em}
+.registration-invite-secret .outline-btn{display:inline-flex;align-items:center;gap:5px;min-height:30px;padding:0 9px;white-space:nowrap;font-size:9px}
+.registration-invitation-list{margin:13px 0 0 45px;border-top:1px solid #edf0ed}
+.registration-invitation-list-head{display:flex;justify-content:space-between;padding:10px 0 6px;color:#77877f;font-size:9px}
+.registration-invitation-list-head span{color:#9aa59f}
+.registration-invitation-empty{display:flex;align-items:center;gap:7px;padding:10px 0;color:#99a49e;font-size:9px}
+.registration-invitation-row{display:grid;grid-template-columns:72px 92px minmax(120px,1fr) auto;align-items:center;gap:10px;min-height:34px;border-top:1px solid #f2f4f2;font-size:9px;color:#89958f}
+.registration-invitation-item{border-top:1px solid #f2f4f2}.registration-invitation-item .registration-invitation-row{border-top:0}.registration-invite-actions{display:flex;align-items:center;gap:10px;white-space:nowrap}.registration-invite-view{display:inline-flex;align-items:center;gap:4px;color:#4c8c70;font-size:9px}.registration-invite-view:disabled{color:#a0aaa4;cursor:not-allowed}.registration-invitation-reveal{display:flex;align-items:center;gap:10px;margin:0 0 8px 82px;padding:8px 10px;border:1px solid #d8eadf;border-radius:7px;background:#f4faf6}.registration-invitation-reveal code{flex:1;overflow-wrap:anywhere;color:#305b49;font-size:11px;font-weight:700;letter-spacing:.05em}.registration-invitation-reveal .outline-btn{display:inline-flex;align-items:center;gap:5px;min-height:28px;padding:0 8px;white-space:nowrap;font-size:9px}
+.registration-invite-state{justify-self:start;padding:4px 6px;border-radius:5px;font-size:8px;white-space:nowrap}
+.registration-invite-state.available{background:#eef8f1;color:#428267}
+.registration-invite-state.used{background:#f2f5f8;color:#687f91}
+.registration-invite-state.revoked{background:#fff3ef;color:#b97968}
+.registration-invite-recipient{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.registration-invite-revoke{font-size:9px;color:#b97968}
+.user-admin-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:-3px 0 16px}
+.user-summary-card{min-height:86px;padding:15px 17px;border:1px solid #e7eee9;border-radius:11px;background:var(--surface);box-shadow:0 5px 18px rgba(24,48,40,.035);display:flex;flex-direction:column;justify-content:center;gap:9px}
+.user-summary-card span{font-size:10px;color:#8c9b94}
+.user-summary-card b{font:700 22px Manrope,var(--font);letter-spacing:-.04em;color:#365d50}
+.user-admin-table-card .table-headline{min-height:78px;flex-wrap:wrap}
+.user-admin-controls{margin-left:auto;display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap}
+.user-admin-controls .search-box{height:34px}
+.user-admin-controls .search-box input{width:150px}
+.user-search-submit{border:0;background:transparent;color:#4a967a;font-size:10px;font-weight:650;padding:4px 2px}
+.user-status-filter{height:34px;border:1px solid #e8edeb;border-radius:7px;background:var(--surface);padding:0 9px;color:#62746e;font-size:10px}
+.user-name,.user-email{display:block;max-width:220px;overflow:hidden;text-overflow:ellipsis}
+.user-name{font-size:10px;color:#40574e;font-weight:650}
+.user-email{font-size:9px;color:#95a19d;margin-top:4px}
+.user-org-list{display:flex;flex-direction:column;align-items:flex-start;gap:5px;max-width:245px;white-space:normal}
+.user-org-list>span:not(.user-no-org){font-size:9px;color:#5f766a;line-height:1.6}
+.user-org-list small{margin-left:7px;color:#96a39a;font-size:8px}
+.user-no-org,.user-normal-role{font-size:9px;color:#9aa5a0}
+.user-admin-badge{display:inline-flex;padding:5px 7px;border:1px solid #dcebe3;border-radius:6px;background:#f0f8f3;color:#428168;font-size:9px}
+.user-status.user-status-on{border-color:#d5eddf;background:#eff9f3;color:#308660}
+.user-status.user-status-off{border-color:#f0dfd9;background:#fff6f3;color:#ba755f}
+.user-status-action{white-space:nowrap}
+.user-status-action.danger{color:#bb7261}
+.entitlement-pill{display:inline-flex;max-width:180px;padding:5px 7px;border-radius:6px;font-size:8px;white-space:nowrap}.entitlement-paid{background:#eef8f1;color:#458368}.entitlement-trial{background:#f2f7fc;color:#5b7e9c}.entitlement-expired{background:#fff4ed;color:#b97951}.pending-payment-hint{display:block;margin-top:5px;color:#b77c4b;font-size:8px;white-space:nowrap}.user-admin-row-actions{display:grid;justify-items:start;gap:4px}.user-grant-action{white-space:nowrap;color:#41876c;font-size:8px}.user-grant-action:hover{color:#21694e}
+.user-admin-error{margin:12px 16px 0}
+.user-admin-empty{height:130px;text-align:center;color:#8c9b99!important;font-size:10px!important}
+.user-admin-pagination{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-top:1px solid #f0f2f0;color:#8b9994;font-size:9px}
+.user-admin-pagination>div{display:flex;gap:8px}
+.user-admin-pagination .outline-btn{min-height:30px;padding:0 10px;font-size:9px}
+@media(max-width:900px){.user-admin-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.user-admin-table-card .table-headline{align-items:flex-start}.user-admin-controls{width:100%;margin-left:45px;justify-content:flex-start}}
+@media(max-width:600px){.user-admin-summary{gap:8px}.user-summary-card{min-height:75px;padding:12px}.user-summary-card b{font-size:19px}.user-admin-controls{margin-left:0}.user-admin-controls .search-box{flex:1;min-width:190px}.user-admin-controls .search-box input{width:100%;min-width:70px}.user-admin-pagination{align-items:flex-start;gap:8px;flex-direction:column}.registration-invitations-card{padding:12px}.registration-invitations-heading{align-items:flex-start;flex-wrap:wrap}.registration-invitations-heading>.table-title-icon{flex:0 0 34px}.registration-invitations-heading>div:nth-child(2){flex:1}.registration-invite-create{margin:8px 0 0 45px}.registration-invitations-note,.registration-invite-error,.registration-invitation-list,.registration-invite-secret{margin-left:0}.registration-invite-secret{align-items:flex-start;flex-wrap:wrap}.registration-invite-secret>div{width:100%}.registration-invite-secret code{min-width:180px}.registration-invitation-row{grid-template-columns:64px 78px minmax(80px,1fr) auto;gap:6px;font-size:8px}.registration-invitation-reveal{margin-left:0;align-items:flex-start;flex-wrap:wrap}.registration-invitation-reveal code{min-width:180px}}

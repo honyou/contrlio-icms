@@ -1,0 +1,50 @@
+name: icms-local
+
+services:
+  postgres:
+    image: ${POSTGRES_IMAGE:-mirror.gcr.io/library/postgres:16-alpine}
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-icms}
+      POSTGRES_USER: ${POSTGRES_USER:-icms}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run make init-local first}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-icms} -d ${POSTGRES_DB:-icms}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: ${REDIS_IMAGE:-mirror.gcr.io/library/redis:7-alpine}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  minio:
+    image: ${MINIO_IMAGE:-bitnamilegacy/minio:latest}
+    restart: unless-stopped
+    command: server /bitnami/minio/data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:?Run make init-local first}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?Run make init-local first}
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    volumes:
+      - minio_data:/bitnami/minio/data
+
+volumes:
+  postgres_data:
+  redis_data:
+  minio_data:

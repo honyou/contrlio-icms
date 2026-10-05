@@ -1,0 +1,30 @@
+.env
+.venv/
+node_modules/
+apps/web/node_modules/
+apps/web/.next/
+apps/api/.pytest_cache/
+apps/api/__pycache__/
+apps/api/**/*.py[cod]
+apps/api/.venv/
+apps/api/alembic/versions/*.pyc
+*.log
+.DS_Store
+
+# Local environment variants; retain safe configuration templates.
+.env.*
+!.env.example
+!.env.production.example
+
+# Generated build and Python caches.
+/apps/web/.next*/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+
+# Local scratch work, exported media, screenshots, and deployment packages.
+/tmp/
+/output/
+/artifacts/
+/contrlio-*.tar.gz
+/apps/web/public/alipay-collection.jpg

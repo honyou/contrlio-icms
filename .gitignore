@@ -1,0 +1,8 @@
+# Parent-directory deployment packages stay local.
+/contrlio-*.tar.gz
+
+# Operating-system temporary files.
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini

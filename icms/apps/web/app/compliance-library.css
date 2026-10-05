@@ -1,0 +1,132 @@
+/* Scoped readability and layout for the country-aware compliance reference page. */
+.compliance-page .compliance-layout{grid-template-columns:230px minmax(0,1fr);gap:18px}
+.compliance-page .compliance-layout>* , .compliance-page .compliance-main>* , .compliance-page .law-grid>* , .compliance-page .guide-risk-control>* , .compliance-page .guide-sample-grid>*{min-width:0}
+.compliance-page .compliance-header-meta{font-size:12px;white-space:normal;flex-shrink:0}
+.compliance-page .compliance-header p{font-size:13px}
+.compliance-page .compliance-industries{padding:15px}
+.compliance-page .compliance-industries>p{font-size:12px;line-height:1.75;color:#76877e}
+.compliance-page .compliance-industry{padding:10px 6px;gap:8px}
+.compliance-page .compliance-industry b{font-size:13px;line-height:1.5}
+.compliance-page .compliance-industry small{font-size:11px;line-height:1.6;color:#829187}
+.compliance-page .compliance-hero h2{font-size:20px}
+.compliance-page .compliance-hero p{font-size:13px}
+.compliance-page .compliance-hero-stats span{font-size:11px;padding:9px 12px}
+.compliance-page .compliance-hero-stats b{font-size:20px}
+.compliance-page .compliance-main{gap:14px}
+.compliance-page .compliance-filter-panel{padding:16px;display:grid;gap:14px;min-width:0}
+.compliance-page .compliance-country-groups{display:flex;flex-wrap:wrap;gap:6px}
+.compliance-page .compliance-country-groups button{border:1px solid #e1e9e4;border-radius:8px;background:var(--surface);color:#6d7f73;padding:9px 17px;font-size:13px;font-weight:650;cursor:pointer}
+.compliance-page .compliance-country-groups button.active{color:#347d61;border-color:#c9e2d2;background:#edf6f0}
+.compliance-page .compliance-filter-row{display:grid;grid-template-columns:minmax(150px,.9fr) minmax(160px,1fr) minmax(220px,1.7fr);gap:12px;align-items:end}
+.compliance-page .compliance-filter-row>label{display:grid;gap:7px;font-size:12px;font-weight:650;color:#536b5d;min-width:0}
+.compliance-page .compliance-filter-row select{height:39px;font-size:13px;width:100%;max-width:none;min-width:0;background:var(--surface)}
+.compliance-page .compliance-filter-row .compliance-search{display:flex;align-items:center;width:auto;padding:0 11px;gap:8px;height:39px;border:1px solid #e1e9e4;border-radius:7px;font-weight:400}
+.compliance-page .compliance-search input{height:36px;font-size:13px;min-width:0}
+.compliance-page .compliance-filter-summary{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;line-height:1.65;font-size:12px;color:#536b5d}
+.compliance-page .compliance-filter-summary small{font-size:11px;color:#829288;margin-left:auto}
+.compliance-page .compliance-filter-summary button{border:0;background:transparent;font-size:12px;color:#3b8666;text-decoration:underline;cursor:pointer;padding:0}
+.compliance-page .compliance-tabs{flex-wrap:wrap}
+.compliance-page .compliance-tabs button{font-size:13px;padding:10px 15px}
+.compliance-page .law-grid{gap:14px}
+.compliance-page .law-card{padding:18px}
+.compliance-page .law-card-top{align-items:flex-start;gap:9px;flex-wrap:wrap}
+.compliance-page .law-card-badges{display:flex;align-items:center;min-width:0;flex-wrap:wrap;gap:6px}
+.compliance-page .law-country,.compliance-page .law-category,.compliance-page .law-source-kind{font-size:11px;line-height:1.6;padding:4px 8px;border-radius:6px}
+.compliance-page .law-country{background:#eef3ff;color:#536e9c;font-weight:700;white-space:nowrap}
+.compliance-page .law-source-kind{background:#f3f2ed;color:#807a5c;font-weight:650}
+.compliance-page .law-jurisdiction{font-size:11px;color:#77897e;line-height:1.6}
+.compliance-page .law-card h3{font-size:16px;line-height:1.6;margin:12px 0 6px;overflow-wrap:anywhere}
+.compliance-page .law-authority{font-size:12px;line-height:1.6;color:#819186}
+.compliance-page .law-summary{font-size:13px;line-height:1.85;color:#617669;margin:12px 0}
+.compliance-page .law-detail{padding:12px}
+.compliance-page .law-detail>b,.compliance-page .law-scope>b,.compliance-page .compliance-checks>b,.compliance-page .guide-risk-control b,.compliance-page .guide-sample-grid b,.compliance-page .guide-law-links>b{font-size:12px;line-height:1.7}
+.compliance-page .law-detail li{font-size:12px;line-height:1.85;color:#62756a;margin:5px 0}
+.compliance-page .law-tags{gap:6px;margin:12px 0}
+.compliance-page .law-tags span{font-size:11px;line-height:1.5}
+.compliance-page .law-scope{padding:11px 12px}
+.compliance-page .law-scope p{font-size:12px;line-height:1.85}
+.compliance-page .law-card-footer{margin-top:13px;padding-top:12px;align-items:flex-end;flex-wrap:wrap;gap:12px}
+.compliance-page .law-card-footer>span{font-size:11px;line-height:1.85;color:#778a7d}
+.compliance-page .law-card-footer a,.compliance-page .guide-law-links a{font-size:12px;line-height:1.7;white-space:normal;overflow-wrap:anywhere}
+.compliance-page .law-card-footer a svg,.compliance-page .guide-law-links a svg{flex-shrink:0}
+.compliance-page .process-link-banner{padding:17px 18px;margin-bottom:14px}
+.compliance-page .process-link-banner h3{font-size:16px}
+.compliance-page .process-link-banner p{font-size:12px;line-height:1.85}
+.compliance-page .process-link-banner .outline-btn{font-size:12px}
+.compliance-page .process-guide-list{gap:14px}
+.compliance-page .process-guide-card{padding:18px}
+.compliance-page .process-guide-top{flex-wrap:wrap}
+.compliance-page .guide-number{font-size:13px}
+.compliance-page .guide-code{font-size:11px;overflow-wrap:anywhere}
+.compliance-page .department-tag{font-size:11px}
+.compliance-page .process-guide-card>h3{font-size:18px;line-height:1.6;margin:12px 0 6px}
+.compliance-page .guide-description{font-size:13px;line-height:1.8;margin-bottom:12px}
+.compliance-page .guide-company-link{padding:11px 12px;gap:10px}
+.compliance-page .guide-company-link label{font-size:12px;flex-wrap:wrap;min-width:0}
+.compliance-page .guide-company-link select{font-size:12px;height:36px;min-width:0;max-width:100%;width:min(330px,100%)}
+.compliance-page .guide-company-link>span{font-size:11px;line-height:1.7;color:#7a8d80}
+.compliance-page .guide-jurisdiction-list{display:grid;gap:10px;margin-top:14px;min-width:0}
+.compliance-page .guide-jurisdiction{border:1px solid #e2ece5;border-radius:9px;min-width:0;padding:0 13px;background:#fcfefd}
+.compliance-page .guide-jurisdiction summary{display:flex;align-items:center;flex-wrap:wrap;gap:7px 10px;font-size:13px;padding:12px 0;cursor:pointer;list-style:none;color:#486d58}
+.compliance-page .guide-jurisdiction summary::after{content:'展开';font-size:11px;color:#6c8a78;margin-left:auto}
+.compliance-page .guide-jurisdiction[open] summary::after{content:'收起'}
+.compliance-page .guide-jurisdiction summary>span:last-child{font-size:11px;color:#819488}
+.compliance-page .guide-jurisdiction[open] summary{border-bottom:1px solid #e8efe9}
+.compliance-page .compliance-focus{padding:12px;margin-top:12px}
+.compliance-page .compliance-focus>b{font-size:12px}
+.compliance-page .compliance-focus>p{font-size:13px;line-height:1.85}
+.compliance-page .compliance-focus .risk-prompt{gap:7px;padding-top:9px}
+.compliance-page .compliance-checks{margin-top:12px}
+.compliance-page .compliance-checks li{font-size:13px;line-height:1.85;margin:5px 0}
+.compliance-page .guide-law-links{padding:12px 0;gap:8px}
+.compliance-page .guide-law-links a{padding:7px 9px}
+.compliance-page .guide-law-empty{font-size:12px;line-height:1.85;color:#928675}
+.compliance-page .guide-law-missing{display:flex;gap:8px;align-items:flex-start;color:#927449;padding-top:12px}
+.compliance-page .guide-law-missing svg{flex-shrink:0;margin-top:4px}
+.compliance-page .guide-law-missing p{font-size:13px;line-height:1.85;margin:0}
+.compliance-page .guide-general-label{font-size:12px;font-weight:700;color:#66846f;margin:16px 0 10px}
+.compliance-page .guide-risk-control>div{padding:12px}
+.compliance-page .guide-risk-control p{font-size:13px;line-height:1.85}
+.compliance-page .guide-sample-grid{gap:10px;margin-top:10px}
+.compliance-page .guide-sample-grid>div{padding:12px}
+.compliance-page .guide-sample-grid span{font-size:13px;line-height:1.85}
+.compliance-page .compliance-empty{display:grid;justify-items:center;gap:10px;padding:34px 24px;font-size:13px;line-height:1.8}
+.compliance-page .compliance-empty>b{color:#647d6d;font-size:15px}
+.compliance-page .compliance-empty>p{max-width:580px;margin:0}
+.compliance-page .compliance-loading{font-size:13px;padding:34px}
+.compliance-page .compliance-error{font-size:13px;line-height:1.7;padding:12px 15px;flex-wrap:wrap}
+.compliance-page .compliance-error>span{flex:1;min-width:200px}
+.compliance-page .compliance-error button{font-size:12px;flex-shrink:0}
+.compliance-page .compliance-disclaimer{font-size:12px;line-height:1.85;padding:14px 16px;margin-top:16px}
+@media(max-width:1150px){
+  .compliance-page .compliance-layout{grid-template-columns:200px minmax(0,1fr)}
+  .compliance-page .law-grid{grid-template-columns:minmax(0,1fr)}
+  .compliance-page .compliance-hero{align-items:flex-start;flex-direction:column}
+  .compliance-page .compliance-hero-stats{justify-content:flex-start}
+  .compliance-page .compliance-filter-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .compliance-page .compliance-filter-row .compliance-search{grid-column:1/-1}
+}
+@media(max-width:760px){
+  .compliance-page .compliance-header{align-items:flex-start;flex-direction:column}
+  .compliance-page .compliance-layout{grid-template-columns:minmax(0,1fr)}
+  .compliance-page .compliance-industries{position:static;max-height:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}
+  .compliance-page .compliance-industries>.section-kicker,.compliance-page .compliance-industries>p{grid-column:1/-1}
+  .compliance-page .compliance-filter-panel{padding:13px}
+  .compliance-page .compliance-filter-summary small{margin-left:0;width:100%}
+  .compliance-page .compliance-toolbar,.compliance-page .process-link-banner{align-items:stretch;flex-direction:column}
+  .compliance-page .compliance-tabs{width:100%}
+  .compliance-page .compliance-tabs button{flex:1;justify-content:center;padding:10px 8px;font-size:12px}
+  .compliance-page .process-link-banner .outline-btn{width:100%;justify-content:center}
+  .compliance-page .guide-company-link{align-items:flex-start;flex-direction:column}
+  .compliance-page .guide-company-link label{align-items:flex-start;flex-direction:column;width:100%}
+  .compliance-page .guide-company-link select{width:100%;max-width:none}
+  .compliance-page .guide-risk-control,.compliance-page .guide-sample-grid{grid-template-columns:minmax(0,1fr)}
+  .compliance-page .law-card-footer{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:430px){
+  .compliance-page .compliance-filter-row{grid-template-columns:minmax(0,1fr)}
+  .compliance-page .compliance-country-groups button{flex:1;padding:9px 10px}
+  .compliance-page .compliance-industries{grid-template-columns:minmax(0,1fr)}
+  .compliance-page .law-card,.compliance-page .process-guide-card{padding:14px}
+  .compliance-page .guide-code{margin-left:0;width:100%}
+}
